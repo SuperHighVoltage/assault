@@ -1,0 +1,112 @@
+--
+--- Getting ready for testing
+--
+
+- HUD elements
+	- Time	[Done]
+	- Curent objective	[Done]
+	- All objectives	[Good enough]
+	- Ammo		[Done]
+	- Sheild	[Done]
+	
+- Seperate stuff from UT	[Done]
+	- Materials
+		- Hammer textures	[Done]
+		- HUD icons	[Done]
+		- Jumppad/weaponlocker/item spawner sprites	[Done]
+		- Make new icons??
+	- Entities
+		- Weapon locker [Done]
+		- Weapon spawn base	[Done for now]
+		- Item spawner	[Done for now]
+		- Make flag to ignore next fall damage for jumppad [Done]
+	- Effects
+		- JumpPad	[Done]
+		- Item spawn	[Done]
+		- Weapon base	[Done]
+	- Map
+		- Make all jumppads use combine model and effect color [Done]
+		- same with weapon base [Done]
+		- Add slam model when blowing up gate	[Done]
+		- Fixup attacker/defender info for objectives
+	- Sounds
+		- Jumppad	[Done]
+		- Item spawn[Done]
+		- Alert		[Done]
+		
+- Fix up round system
+	- ROUND_WAIT for when there isn't enough players
+		- Wait for player input or required ammount of players
+		- Allow all waiting players to complete the objectives while controlling melons
+	- ROUND_STARTING for pre-match count down
+		- Spectate uncompleted objective (ran out of time)/last objective (completed all objectives/free roam (first match)
+	- ROUND_ACTIVE current round
+		- Make round time the time it took to complete the last round (if there was one) [Done]
+
+	- Remove debug messages	[Left objective and round debug]
+
+--	
+--- Future
+--
+
+- fix weapon base errors	[Done]
+
+- Fix hud info inbetween rounds [Done]
+- More objective types
+	- Get vehicle
+		- 
+	- Pickup objective
+	
+	- Drop-off objective
+		- for above 2
+- Announcer from UT? 
+	- Am i allowed to include them?
+
+- Make new HUD icons
+- Fix god dammed weapon locker [Done]
+- Wall charger for multiple players? (like the weapon locker)
+- Combine version of weapon locker
+- Better effects for hold objective
+- Improve the effects for objective icons on the HUD 
+	- Including completion bar
+- Score
+- Make global entity that mappers can set gamemode related stuff
+	- Round length	[Done]
+	- Who is attacking who (Mostly for the player models)	[Done]
+		- Rebels
+		- Combine
+		- Terrorists
+		- Counter-terrorists
+		- Zombies/Undead
+		- Custom1
+		- Custom2
+			- You can give playermodel names for these
+	- Weapon loadout	[Done]
+		- have list of choices or link to playermodels?
+	- Team colors?
+	- Music?
+
+- Wait for player vote before starting first round
+- Waiting players can complete objectives as melon
+	
+	
+	
+- Vehicle spawner effects
+- Vehicle weapons
+- Player spawn defending turrets
+- Flag objective displaying on HUD
+	- save flag as networkvar and if its valid then do whatever
+- Fix buggyness of flag objective when physics carry
+	- no completion	[Done]	----- Its because of the physics carry flag, its used to remove the bar, chage to normal property
+	- sends player to other teams starting spawn after completion? [Done]
+- Vehicle objective
+	- Specify vehicle spawner as startpoint
+	- Make vehicle spawner set the name of the vehicle
+	- Use this name to identify the vehicle for the objective
+- 
+	
+	
+	
+	
+	
+	
